@@ -1,3 +1,8 @@
+/*
+ * Formation Dercetech — JavaScript profiling et mémoire
+ * Dercetech Training — JavaScript profiling and memory
+ * Référence / Reference: https://training.dercetech.com/trainings/memory-profiling/
+ */
 const BYTES_PER_MEGABYTE = 1024 * 1024;
 
 export function formatNativeMemoryUsage() {

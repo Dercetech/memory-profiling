@@ -1,3 +1,8 @@
+/*
+ * Formation Dercetech — JavaScript profiling et mémoire
+ * Dercetech Training — JavaScript profiling and memory
+ * Référence / Reference: https://training.dercetech.com/trainings/memory-profiling/
+ */
 const MOVEMENT_CODES = new Set([
   'ArrowLeft',
   'ArrowRight',

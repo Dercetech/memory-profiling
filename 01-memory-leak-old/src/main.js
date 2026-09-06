@@ -1,3 +1,8 @@
+/*
+ * Formation Dercetech — JavaScript profiling et mémoire
+ * Dercetech Training — JavaScript profiling and memory
+ * Référence / Reference: https://training.dercetech.com/trainings/memory-profiling/
+ */
 import Phaser from 'phaser';
 import './style.css';
 import { GAME_HEIGHT, GAME_WIDTH } from './config.js';
