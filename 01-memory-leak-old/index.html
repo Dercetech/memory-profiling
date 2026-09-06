@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Un petit jeu Phaser conçu pour observer et diagnostiquer une fuite mémoire." />
+    <title>01 — Fuite mémoire</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Laboratoire de profilage mémoire</p>
+        <h1>Collecteur d’orbes</h1>
+        <p>
+          Ramassez les orbes lumineuses avec les flèches, ZQSD sur un clavier
+          belge ou français, ou WASD sur un clavier QWERTY.
+        </p>
+      </header>
+
+      <div id="game" aria-label="Jeu du collecteur d’orbes"></div>
+
+      <p class="hint">
+        Ouvrez les DevTools avant de jouer. Le jeu contient une fuite mémoire à
+        observer, expliquer puis corriger.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-current-year>2026</span> Dercetech SRL</p>
+      <a href="https://training.dercetech.com">training.dercetech.com</a>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

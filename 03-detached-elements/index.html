@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un lab JavaScript pur pour observer des éléments DOM détachés, mais toujours retenus par une reference JavaScript.">
+    <title>Detached elements — Memory profiling</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <p class="eyebrow">Laboratoire 03 · Memory</p>
+        <h1>Detached elements</h1>
+        <p>Un élément disparaît de la page, mais une reference JavaScript peut encore le garder dans le heap.</p>
+      </header>
+
+      <section class="control-card" aria-labelledby="controls-title">
+        <div>
+          <p class="eyebrow">Scénario</p>
+          <h2 id="controls-title">Ajoutez, retirez, observez</h2>
+          <p>Retirez une entrée de la liste. Elle disparaît du DOM, mais le lab conserve volontairement une reference dans un tableau JavaScript.</p>
+        </div>
+        <div class="actions">
+          <button id="add-entry" type="button">Add element</button>
+          <button id="release-references" class="secondary" type="button" disabled>Release retained references</button>
+        </div>
+      </section>
+
+      <section class="workspace" aria-labelledby="entries-title">
+        <div class="stats" aria-label="État du lab">
+          <p><span>Dans le DOM</span><strong id="visible-count">0</strong></p>
+          <p><span>References retenues</span><strong id="retained-count">0</strong></p>
+        </div>
+        <h2 id="entries-title">Éléments visibles</h2>
+        <p id="empty-state" class="empty-state">Ajoutez un élément pour commencer.</p>
+        <ul id="entry-list" class="entry-list" aria-describedby="lab-status"></ul>
+      </section>
+
+      <aside class="tip-card" aria-labelledby="devtools-title">
+        <p class="eyebrow">DevTools</p>
+        <h2 id="devtools-title">Cherchez les Detached elements</h2>
+        <ol>
+          <li>Ajoutez quelques éléments, puis retirez-les de la liste.</li>
+          <li>Dans <strong>Memory</strong>, lancez un profile <strong>Detached elements</strong>.</li>
+          <li>Revenez ici, cliquez <strong>Release retained references</strong>, puis prenez un nouveau profile comparable.</li>
+        </ol>
+      </aside>
+
+      <p id="lab-status" class="sr-only" aria-live="polite"></p>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
