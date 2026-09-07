@@ -369,7 +369,7 @@ export class JemAsteroidsScene extends Phaser.Scene {
 
   emitExplosion(x, y) {
     this.explosionFlash.emitParticleAt(x, y);
-    const particleCount = EXPLOSIONS.particlesPerMine * 100;
+    const particleCount = EXPLOSIONS.particlesPerMine;
 
     for (let index = 0; index < particleCount; index += 1) {
       const particle = new ExplosionParticle(this);
